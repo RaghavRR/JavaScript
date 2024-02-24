@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121;  color: #fff;">
+
+    
+</body>
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", "Generated title");
+    div.style.backgroundColor = "green";
+    div.style.padding = "12px";
+
+
+
+    // div.innerHTML AND document.createTextNode dono kaam ek he krte h but ham document.createTextNode ye use krte h becz optamized
+    // div.innerHTML = "Chai aur Code";
+    // jada document.createTextNode("Chai aur Code") ye use hota h kyuki ye optamized code deta h.
+    const addText = document.createTextNode("Chai aur Code");
+    div.appendChild(addText);
+
+
+    document.body.appendChild(div);
+
+</script>
+</html>

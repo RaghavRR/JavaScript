@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #101010;
+}
+
+#banner {
+  font-size: 24px;
+  color: #fdfdfd;
+  margin-bottom: 20px;
+}
+
+#clock {
+  background-color: orange;
+  padding: 20px 50px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}

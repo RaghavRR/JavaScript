@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>    
+</body>
+<script>
+    // ye optamized nhi h code.. becz ye pura tree travering krna padh rha h.
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+
+
+    }
+    addLanguage("python");
+    addLanguage("Typescript");
+
+
+
+
+    // ye optamized h code 
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        const addText = document.createTextNode(langName);
+        li.appendChild(addText);
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage("C++");
+    addLanguage("Java");
+
+
+
+// ******************************EDITED********************************
+// 1) Example
+    const secondLang = document.querySelector('li:nth-child(2)');
+    // ye galt approch h.. kyuki pura travercing krne hogi :-
+    // secondLang.innerHTML = "Mojo";
+
+    const newLi = document.createElement('li');
+    newLi.textContent = "Mojo";
+    secondLang.replaceWith(newLi);
+    
+// 2) Example
+    const firstLang = document.querySelector('li:nth-child(1)');
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+
+
+// **********************************REMOVE******************
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();
+
+
+
+
+</script>
+</html>

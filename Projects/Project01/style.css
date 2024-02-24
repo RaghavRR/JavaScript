@@ -1,0 +1,75 @@
+
+html {
+  margin: 0;
+  height: 100%; 
+}
+
+
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Arial, sans-serif; 
+  color: white; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333; 
+}
+
+header h1 {
+  margin: 0;
+}
+
+
+main {
+  flex: 1; 
+  padding: 20px;
+}
+
+.canvas {
+  margin: 0 auto; 
+  max-width: 600px; 
+}
+
+.canvas h3 {
+  text-align: center;
+}
+
+
+.button {
+  width: 100px;
+  height: 100px;
+  border: solid black 2px;
+  border-radius: 50%;
+  margin: 10px;
+  display: inline-block;
+}
+
+#grey {
+  background: grey;
+}
+
+#white {
+  background: white;
+}
+
+#blue {
+  background: blue;
+}
+
+#yellow {
+  background: yellow;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #333; 
+  padding: 10px 0;
+}

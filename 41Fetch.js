@@ -1,0 +1,1 @@
+// samjaya h sir n with the help of diagram.
